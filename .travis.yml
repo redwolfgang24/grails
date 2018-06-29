@@ -5,6 +5,6 @@ before_install:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD $DOCKER_REGISTRY
 
 script:
-  - docker build -t $DOCKER_REPO:$TRAVIS_BUILD_NUMBER 2.4.5
+  - docker build -t $DOCKER_REPO:2.4.5 2.4.5
   - docker tag $DOCKER_REPO:2.4.5 $DOCKER_REPO:2.4.5
   - docker push $DOCKER_REPO
