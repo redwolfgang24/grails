@@ -1,7 +1,7 @@
 FROM java:8
 MAINTAINER Larry Borrero <redwolfgang20@gmail.com>
 
-ARG GRAILS_VERSION=2.4.5
+ARG GRAILS_VERSION=2.5.0
 
 # Install Grails
 WORKDIR /usr/lib/jvm
