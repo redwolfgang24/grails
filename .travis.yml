@@ -6,5 +6,5 @@ before_install:
 
 script:
   - docker build -t $DOCKER_REPO:$TRAVIS_BUILD_NUMBER 2.4.5
-  - docker tag $DOCKER_REPO:$TRAVIS_BUILD_NUMBER $DOCKER_REPO:$TRAVIS_BUILD_NUMBER
+  - docker tag $DOCKER_REPO:2.4.5 $DOCKER_REPO:2.4.5
   - docker push $DOCKER_REPO
