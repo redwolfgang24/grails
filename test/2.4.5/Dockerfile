@@ -15,7 +15,7 @@ RUN ln -s grails-$GRAILS_VERSION grails
 ENV GRAILS_HOME /usr/lib/jvm/grails
 ENV PATH $GRAILS_HOME/bin:$PATH
 
-WORKDIR ~
+WORKDIR /
 
 # Set Default Behavior
 ENTRYPOINT ["grails"]
