@@ -16,6 +16,11 @@ before_script:
 
 jobs:
   include:
+    - stage: test
+      script:
+        - docker build -t $DOCKER_REPO:test test/2.4.5
+        - docker tag $DOCKER_REPO:test $DOCKER_REPO:test
+        - docker push $DOCKER_REPO
     - stage: 2.4.4
       script:
         - docker build -t $DOCKER_REPO:2.4.4 2.4.4

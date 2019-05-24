@@ -1,7 +1,7 @@
 FROM java:8
 MAINTAINER Larry Borrero <redwolfgang20@gmail.com>
 
-ARG GRAILS_VERSION=2.4.4
+ARG GRAILS_VERSION=2.4.5
 
 # Install Grails
 WORKDIR /usr/lib/jvm
@@ -14,12 +14,6 @@ RUN ln -s grails-$GRAILS_VERSION grails
 # Setup Grails path.
 ENV GRAILS_HOME /usr/lib/jvm/grails
 ENV PATH $GRAILS_HOME/bin:$PATH
-
-# Create App Directory
-RUN mkdir /app
-
-# Set Workdir
-WORKDIR /app
 
 # Set Default Behavior
 ENTRYPOINT ["grails"]
