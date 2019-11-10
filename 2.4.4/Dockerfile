@@ -1,4 +1,4 @@
-FROM java:7
+FROM java:9
 MAINTAINER Larry Borrero <redwolfgang20@gmail.com>
 
 ARG GRAILS_VERSION=2.4.4

@@ -9,7 +9,7 @@ matrix:
 language: java
 
 jdk:
-  - oraclejdk7
+  - oraclejdk9
 
 before_script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD $DOCKER_REGISTRY
